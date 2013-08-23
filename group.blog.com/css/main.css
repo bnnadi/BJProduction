@@ -1,0 +1,106 @@
+html {
+	background: url("/img/noisy_grid.png") ;
+}
+
+ nav {
+    float: left;
+    clear: right;
+    padding: .5%;
+    margin-top: 2.4%;
+    margin-left: 260px;
+    width: 960px;
+    list-style: none;
+}
+
+ nav h1 {
+	float: left;
+	width: 545px;	
+}
+
+ nav h1  a {
+ 	text-decoration: none;
+ 	color: #34e7b5;
+ 	font-size: 52px;
+}
+
+ nav ul {
+ 	float: left;
+    width: 325px;
+}
+
+ nav li {
+    float: left;
+    list-style: none;
+    text-align: center;
+    width: 115px;
+    margin-left: 25px;
+    background-color: #272727;
+    border-radius: 4.5px;
+}
+
+ nav li a {
+    text-decoration: none;   
+    color: #fff;
+    font-size: 24px;
+}
+
+ nav li a:hover {
+    color: #2d858b;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav p {
+	clear: both;
+	float: right;
+	margin: -50px 30px 0 0;
+	width: 200px;
+}
+
+nav p span {
+	text-decoration: underline;
+}
+
+#signUp {
+	width: 160px;
+}
+
+.topLine {
+	border-top: solid;
+	width: 960px;
+	margin-left:  250px;
+}
+
+.clear {
+    margin-bottom: 2%;
+    clear: both;
+}
+
+.blog_info_column {
+	width: 960px;
+	margin-left: 250px;	
+}
+
+ /**** Side NAvigation ****/
+ 
+ 
+ /**** FORMs****/
+form {
+	width: 460px	
+}
+
+label {
+	width: 120px;
+	margin: 10px;
+}
+
+input {
+	width: 240px;
+	margin: 15px;
+	background-color: #EEE9E9;
+}
+
+
+footer {
+	font-size: 12px;
+}
