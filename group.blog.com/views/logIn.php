@@ -8,7 +8,8 @@
 	  <form action="#" enctype="multipart/form-data" method="post">
       	<label>Username</label> <input type="text" name="pname" /><br />
       	<label>Password</label> <input type="password" name="password" /><br />
-      	
-      	<a href="/">cancel</a><input id="submit" type="submit" value="sign in"/><br />
+      	<div>
+      		<a href="/">cancel</a><input id="submit" type="submit" value="sign in"/><br />
+      	</div>
       </form>
 </div>

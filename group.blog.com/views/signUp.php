@@ -9,7 +9,8 @@
       	<label>Username</label> <input type="text" name="pname" /><br />
       	<label>Password</label> <input type="password" name="password" /><br />
       	<label>Confirm Password</label> <input type="password" name="password" /><br />
-      	
-      	<a href="/">cancel</a><input id="submit" type="submit" value="sign up"/><br />
+      	<div>
+      		<a href="/">cancel</a><input id="submit" type="submit" value="sign up"/><br />
+      	</div>
       </form>
 </div>
