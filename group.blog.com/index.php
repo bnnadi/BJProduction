@@ -1,5 +1,41 @@
 <?php
+
 session_start();
+
+$page = $_GET['page'];
+
+/*if ($_SESSION['loggedin'] != 'true') {
+    echo "please log in";
+}*/
+
+//$_SESSION['loggedin'] = 'true';
+//$_SESSION['username'] = $user;
+//$_SESSION['userid'] = $userID;
+
+if ($page == "'signup'") {
+    include "controllers/SignUp.php";
+    $instance = new SignUp();
+    $instance->get($_GET);
+}
+else if ($page == "'signin'") {
+    include "controllers/SignIn.php";
+    $instance = new SignIn();
+    $instance->get($_GET);
+} else if ($page == "'logout'") {
+    include "controllers/LogOut.php";
+    include "controllers/SignIn.php";
+    $instance = new SignIn();
+    $instance->get($_GET);
+} else {
+    include "controllers/Home.php";
+    $instance = new Home();
+    $instance->get($_GET);
+}
+
+/*$homeInstance = new Home();
+$homeInstance->get($_GET);*/
+
+/*session_start();
 include "controllers/Home.php";
 
 
@@ -14,7 +50,7 @@ if ($con == "home") {
 	$homeInstance->get($_GET);
 }else{
 	echo "the controller was not 'home'";
-}
+}*/
 
 // $test  = "{'name': 'Bisike', 'school': 'Full Sail', 'city': 'Orlando'}";
 // 
