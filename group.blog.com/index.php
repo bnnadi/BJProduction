@@ -21,10 +21,16 @@ else if ($page == "'signin'") {
     include "controllers/SignIn.php";
     $instance = new SignIn();
     $instance->get($_GET);
-} else if ($page == "'logout'") {
+} 
+else if ($page == "'logout'") {
     include "controllers/LogOut.php";
     include "controllers/SignIn.php";
     $instance = new SignIn();
+    $instance->get($_GET);
+} 
+else if ($page == "'createblog'") {
+    include "controllers/BlogForm.php";
+    $instance = new BlogForm();
     $instance->get($_GET);
 } else {
     include "controllers/Home.php";
