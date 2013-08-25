@@ -1,7 +1,7 @@
 <?php
  require_once('models/view.php');
  
- class Home {
+ class UserPage {
  	function get($pairs,$data = '') {
  		$view_model = new View();
 		$view_model->getView("header");
@@ -19,23 +19,12 @@
         
         include_once ("database/connection.php");
         
-        $section = $_GET['section'];
-        
-        if ($section == "Technology") {
-            $query = "SELECT * FROM Blog WHERE topic = 'technology';";
-        } 
-        else if ($section == "Music") {
-            $query = "SELECT * FROM Blog WHERE topic = 'music';";
-        }
-        else if ($section == "Sports") {
-            $query = "SELECT * FROM Blog WHERE topic = 'sports';";
-        }
-        else if ($section == "Miscellanous") {
-            $query = "SELECT * FROM Blog WHERE topic = 'miscellanous';";
-        } else {
-            $query = "SELECT * FROM Blog;"; 
+        if ($_GET['action'] == 'delete') {
+            include_once ("database/delete.php");
         }
         
+        $user = $_SESSION['userid'];
+        $query = "SELECT * FROM Blog WHERE userID = '$user'";
         $result = mysql_query($query);
         
         echo "<div class='clear'></div>";
@@ -45,28 +34,18 @@
             $topic = $blog['topic'];
             $content = $blog['content'];
             $time = $blog['time'];
-            
-            $userID = $blog['userID'];
-            $user = mysql_query("SELECT * FROM People WHERE userID = '$userID';");
-            $user = mysql_fetch_array($user);
-            $user = $user['username'];
+            $blogID = $blog['blogID'];
             
             echo "<div class='blog_piece'>";
             echo "<h3 class='title'>".$title."</h3>";
             echo "<p class='topic'>".$topic."</p>";
             echo "<p class='content'>".$content."</p>";            
-            echo "<p class='user'>".$user."</p>";
             echo "<p class='time'>".$time."</p>";
+            echo "<a class='delete_link' href='?page=userpage&action=delete&blogid=$blogID'>Delete Blog</a>";
+            echo "<a class='modify_link' href='?page=modifyblog&action=modify&blogid=$blogID'>Modify Blog</a>";
             echo "</div>";
         }
         echo "</div>";
-        
-        $view_model->getView("home");
-        
-        if ($_SESSION['loggedin'] == 'true')
-        {
-            $view_model->getView("userDashboard");
-        }
         
  		$view_model->getView("footer");
 	}

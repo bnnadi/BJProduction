@@ -5,15 +5,19 @@
 		<div id="niceBlock"></div>
 	</div>
 	  <form action="#" enctype="multipart/form-data" method="post">
-	  	<label>Title</label> <input type="text" name="title" /><br />
-      	<label>Topic</label> <!--<input type="text" name="topic" /><br />-->
+	  	<label>Title</label> <input type="text" name="title" value="<?php
+                                                                        echo $_GET['title'];
+                                                                     ?>" /><br />
+      	<label>Topic</label>
         <select name="topic">
-            <option value="technology">Technology</option>  
-            <option value="sports">Sports</option> 
-            <option value="music">Music</option> 
-            <option value="miscellanous">Miscellanous</option> 
+            <?php if (!empty($_GET['topic'])) {
+                      echo "<option value=".$_GET['topic'].">Previous: ".$_GET['topic']."</option>";                   } ?>
+            <option value="Technology">Technology</option>  
+            <option value="Sports">Sports</option> 
+            <option value="Music">Music</option> 
+            <option value="Miscellanous">Miscellanous</option> 
         </select>
-      	<label>Content</label> <textarea name="content"></textarea><br />
+      	<label>Content</label> <textarea name="content"><?php echo $_GET['content']?></textarea><br />
       	<div>
       		<a href="/">cancel</a><input id="submit" type="submit" value="sign up"/><br />
       	</div>

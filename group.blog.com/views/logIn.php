@@ -9,7 +9,7 @@
       	<label>Username</label> <input type="text" name="username" /><br />
       	<label>Password</label> <input type="password" name="password" /><br />
       	<div>
-      		<a href="?page='logout'">logout</a><input id="submit" type="submit" value="sign in"/><br />
+      		<a href="?page=logout">logout</a><input id="submit" type="submit" value="sign in"/><br />
       	</div>
       </form>
 </div>

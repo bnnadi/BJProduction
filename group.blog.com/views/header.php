@@ -23,12 +23,12 @@
 	<body>
 		<nav>
             <!--<h1><a href="?page='home'">Blog Logo</a></h1>-->
-			<h1><a href="?page='home'">Blog Logo</a></h1>
+			<h1><a href="?page=home">Blog Logo</a></h1>
             <ul>
                 <!--<li><a href="/home/logIn">Sign In</a></li>
                 <li id="signUp"><a href="/home/signUP">Sign Up</a></li>-->
-                <li><a href="?page='signin'">Sign In</a></li>
-                <li id="signUp"><a href="?page='signup'">Sign Up</a></li>
+                <li><a href="?page=signin">Sign In</a></li>
+                <li id="signUp"><a href="?page=signup">Sign Up</a></li>
 			</ul>
 			<p>Currently logged in as <span><?php 
                                               if ($_SESSION['loggedin'] == 'true') {

@@ -1,15 +1,12 @@
 <?php
  require_once('models/view.php');
  
- class BlogForm {
+ class BlogModify {
  	function get($pairs,$data = '') {
  		$view_model = new View();
 		$view_model->getView("header");
- 		$view_model->getView("blogForm");
         
-        if (empty($_POST)) {
-            echo "<p>FILL ALL THE FIELDS</p>";
-        } else {
+        if (!empty($_POST)) {
             include_once('validators/blogvalidator.php');
 
             $formFields = array(
@@ -22,20 +19,22 @@
             $message = $validator->validate($formFields);
             
             if ($message == "valid") {
-                include_once('database/makeblog.php');
-                
-                $userID = $_SESSION["userid"];
-                $title = $formFields['title'];
-                $topic = $formFields['topic'];
-                $content = $formFields['content'];
-            
-                $create = new MakeBlog();
-                $create->create($userID, $title, $topic, $content);
+                include_once('database/modifyblog.php');
             } else {
                 echo $message;
             }   
         }
         
+        include_once("database/connection.php");
+        $blogID = $_GET['blogid'];
+        $query = "SELECT * FROM Blog WHERE blogID = '$blogID';";
+        $result = mysql_query($query);
+        $result = mysql_fetch_array($result);
+        $_GET['title'] = $result['title'];
+        $_GET['topic'] = $result['topic'];
+        $_GET['content'] = $result['content'];
+        
+        $view_model->getView("blogForm");
  		$view_model->getView("footer");
 	}
  }
