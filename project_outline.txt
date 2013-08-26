@@ -1,0 +1,8 @@
+Statement of Purpose:
+
+The purpose of this project is to create a blog site that can interact with the flickr API. The blog site will contain different topics that can be browsed by any user, but only the users that are logged in can add and modify their own blogs. 
+
+Responsabilities:
+
+Jean Amarante - PHP/MySQL
+Bisike Nnadi - CSS/HTML/Design

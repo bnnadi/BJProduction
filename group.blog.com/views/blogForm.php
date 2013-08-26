@@ -12,12 +12,12 @@
         <select name="topic">
             <?php if (!empty($_GET['topic'])) {
                       echo "<option value=".$_GET['topic'].">Previous: ".$_GET['topic']."</option>";                   } ?>
-            <option value="Technology">Technology</option>  
+            <option value="Technology">Technology</option> 
             <option value="Sports">Sports</option> 
             <option value="Music">Music</option> 
             <option value="Miscellanous">Miscellanous</option> 
         </select>
-      	<label>Content</label> <textarea name="content"><?php echo $_GET['content']?></textarea><br />
+      	<label>Content</label> <textarea name="content"><?php echo $_GET['content']; ?></textarea><br />
       	<div>
       		<a href="/">cancel</a><input id="submit" type="submit" value="sign up"/><br />
       	</div>
