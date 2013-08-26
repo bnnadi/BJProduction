@@ -49,9 +49,9 @@ html {
 }
 
  nav li a:hover {
-    color: #2d858b;
-    font-size: 24px;
+    color: #4B0082;
     font-weight: bold;
+    background-color:  #fff;
 }
 
 nav p {
@@ -69,6 +69,12 @@ nav p span {
 #signUp {
 	width: 160px;
 	background: #4B0082 url("/img/03.png")no-repeat right;
+}
+
+#signUp:hover {
+	/*background: #ffffff url("/img/03_hover.png")no-repeat right;*/
+	color: #4B0082;
+    font-weight: bold;
 }
 
 .topLine {
@@ -133,6 +139,7 @@ nav p span {
 	width: 200px;
 	margin-bottom:  5px;
 	font-size: 32px;
+	color:  rgba(75,	0,	130, 0.9);
 }
 
 .blog_piece .topic {
@@ -143,7 +150,7 @@ nav p span {
 }
 
 .blog_piece #niceBlock {
-	background-color: #000;
+	background-color: #4B0082;
 	width: 25px;
 	height:  10px;
 	margin: -10px 0 0 475px;
@@ -245,7 +252,7 @@ nav p span {
 }
 
 #niceBlock {
-	background-color: #000;
+	background-color: #4B0082;
 	width: 25px;
 	height:  10px;
 	margin-left: 675px;
@@ -294,6 +301,7 @@ textarea {
 
 #submit {
 	width: 190px;
+	color: #fff;
 	background-color: #4B0082;
 }
 
