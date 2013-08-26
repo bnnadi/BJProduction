@@ -1,6 +1,6 @@
 html {
 	background: url("/img/fabric_of_squares_gray.png") ;
-	font-family: "Comic Sans MS",  "Helvetica neue", Arial, sans-serif;
+	font-family:  "Helvetica neue", Arial, sans-serif;
 }
 
  nav {
@@ -16,11 +16,12 @@ html {
  nav h1 {
 	float: left;
 	width: 545px;	
+	font-family: 'Monofett', cursive;
 }
 
  nav h1  a {
  	text-decoration: none;
- 	color: #575757;
+ 	color: #4B0082;
  	font-size: 52px;
 }
 
@@ -35,7 +36,7 @@ html {
     text-align: center;
     width: 115px;
     margin-left: 25px;
-    background-color: #444;
+    background-color: #4B0082;
     padding: 5px 0;
     border-radius: 4.5px;
 }
@@ -56,7 +57,7 @@ html {
 nav p {
 	clear: both;
 	float: right;
-	margin: -45px 30px 0 0;
+	margin: -30px 30px 0 0;
 	width: 230px;
 }
 
@@ -67,7 +68,7 @@ nav p span {
 
 #signUp {
 	width: 160px;
-	background: #444 url("/img/03.png")no-repeat right;
+	background: #4B0082 url("/img/03.png")no-repeat right;
 }
 
 .topLine {
@@ -81,19 +82,119 @@ nav p span {
     clear: both;
 }
 
+ /**** Main conTent ****/
+
 .blog_info_column {
 	width: 620px;
 	margin-left: 250px;	
 	float: left;
 }
 
+#add_button {
+	width: 100px;
+	float: right;
+}
+
+#add_button a:first-child {
+	display: block;
+	height: 48px;
+	background: url("/img/add.png")no-repeat;
+	text-indent: -9999px;
+	margin-bottom: 15px;
+}
+
+#add_button a:first-child:hover {
+	background: url("/img/add_hover.png")no-repeat;
+}
+
+#add_button a:last-child {
+	display:block;
+	height: 48px;
+	background: url("/img/edit.png")no-repeat;
+	text-indent: -9999px;
+}
+
+#add_button a:last-child:hover {
+	background: url("/img/edit_hover.png")no-repeat;
+}
+
+.blog_piece {
+	width: 500px;
+	clear: both;
+}
+
+.blog_piece .topLine {
+	width: 500px;
+	margin-left: 0;
+	clear: right;
+}
+
+.blog_piece .title {
+	width: 200px;
+	margin-bottom:  5px;
+	font-size: 32px;
+}
+
+.blog_piece .topic {
+	width: 100px;
+	float: right;
+	margin:  -30px 25px 0 0;
+	font-size: 18px;
+}
+
+.blog_piece #niceBlock {
+	background-color: #000;
+	width: 25px;
+	height:  10px;
+	margin: -10px 0 0 475px;
+}
+
+.blog_piece .user {
+	margin-left: 265px;
+	margin-bottom: -18px;
+}
+
+.blog_piece .time {
+	float right;
+	margin-top: -15px;
+	margin-left: 365px;
+	width:  180px;
+}
+
+.blog_piece .delete_link {
+	float: left;
+	margin: 0 20px 20px 0;
+	display: block;
+	height: 32px;
+	width: 32px;
+	background: url("/img/trash.png")no-repeat;
+	text-indent: -9999px;
+}
+
+.blog_piece .delete_link:hover {
+	border-bottom: solid #4B0082;
+}
+
+.blog_piece .modify_link {
+	float: left;
+	display: block;
+	height: 32px;
+	width: 32px;
+	background: url("/img/edit32.png")no-repeat;
+	text-indent: -9999px;
+}
+
+.blog_piece .modify_link:hover {
+	border-bottom: solid #4B0082;
+}
+
  /**** Side NAvigation ****/
  .blog_Section_column {
  	overflow:hidden;
 	width: 300px;
-	margin-left: 35px;
-	float: left;
-	background-color: #444;
+	margin-right: 215px;
+	float: right;
+	background-color: #4B0082;
 	border-radius:  5px;
 }
 
@@ -119,13 +220,14 @@ nav p span {
 }
 
  .blog_Section_column ul li a {
+ 	color: #fff;
  	text-decoration: none;
  	display: block;
 }
 
  .blog_Section_column ul li a:hover {
  	background-color: #fff;
- 	color: #575757;
+ 	color: #4B0082;
  	border-bottom: solid 1px;
 }
 
@@ -177,9 +279,13 @@ input, textarea, select{
 	width: 470px;
 	height: 50px;
 	margin-top: 15px;
-	background-color: #575757;
+	background-color: rgba(75,	0,	130, 0.8);
 	font-size: 22px;
 	border-radius:  5px;
+}
+
+input:focus, textarea:focus {
+	background-color: rgba(75,	0,	130, 0.5);
 }
 
 textarea {
@@ -188,10 +294,12 @@ textarea {
 
 #submit {
 	width: 190px;
+	background-color: #4B0082;
 }
 
 #submit:hover {
-	background-color:  #676767;
+	color: #fff;
+	background-color:  rgba(75,	0,	130, 0.9);
 }
 
  /**** FOOTEr****/

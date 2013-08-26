@@ -39,6 +39,8 @@
             echo "<div class='blog_piece'>";
             echo "<h3 class='title'>".$title."</h3>";
             echo "<p class='topic'>".$topic."</p>";
+			echo "<div class='topLine'></div>";
+			echo "<div id='niceBlock'></div>";			
             echo "<p class='content'>".$content."</p>";            
             echo "<p class='time'>".$time."</p>";
             echo "<a class='delete_link' href='?page=userpage&action=delete&blogid=$blogID'>Delete Blog</a>";

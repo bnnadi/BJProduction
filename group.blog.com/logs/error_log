@@ -66,3 +66,4 @@
 [Sun Aug 25 19:23:20 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/', referer: http://group.blog.com/?page=home
 [Sun Aug 25 19:23:33 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/', referer: http://group.blog.com/?page=home
 [Sun Aug 25 19:23:40 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/home, referer: http://group.blog.com/home/logIn
+[Mon Aug 26 10:39:38 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/img/.png, referer: http://group.blog.com/?page=home
