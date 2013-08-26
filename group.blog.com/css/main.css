@@ -62,13 +62,13 @@ nav p {
 }
 
 nav p span {
-	text-decoration: underline;
-	font-weight: lighter;
+	font-weight: bold;
 }
 
 #signUp {
 	width: 160px;
-	background: #4B0082 url("/img/03.png")no-repeat right;
+/*	background: #4B0082 url("/img/03.png")no-repeat right;*/
+    background: #4B0082 url("../img/03.png")no-repeat right;
 }
 
 .topLine {
@@ -98,24 +98,27 @@ nav p span {
 #add_button a:first-child {
 	display: block;
 	height: 48px;
-	background: url("/img/add.png")no-repeat;
+	background: url("../img/add.png")no-repeat;
 	text-indent: -9999px;
 	margin-bottom: 15px;
 }
 
 #add_button a:first-child:hover {
-	background: url("/img/add_hover.png")no-repeat;
+/*	background: url("/img/add_hover.png")no-repeat;*/
+    background: url("../img/add_hover.png")no-repeat;
 }
 
 #add_button a:last-child {
 	display:block;
 	height: 48px;
-	background: url("/img/edit.png")no-repeat;
+/*	background: url("/img/edit.png")no-repeat;*/
+    background: url("../img/edit.png")no-repeat;
 	text-indent: -9999px;
 }
 
 #add_button a:last-child:hover {
-	background: url("/img/edit_hover.png")no-repeat;
+/*	background: url("/img/edit_hover.png")no-repeat;*/
+    background: url("../img/edit_hover.png")no-repeat;
 }
 
 .blog_piece {
@@ -167,7 +170,8 @@ nav p span {
 	display: block;
 	height: 32px;
 	width: 32px;
-	background: url("/img/trash.png")no-repeat;
+/*	background: url("/img/trash.png")no-repeat;*/
+    background: url("../img/trash.png")no-repeat;
 	text-indent: -9999px;
 }
 
@@ -180,7 +184,8 @@ nav p span {
 	display: block;
 	height: 32px;
 	width: 32px;
-	background: url("/img/edit32.png")no-repeat;
+/*	background: url("/img/edit32.png")no-repeat;*/
+    background: url("../img/edit32.png")no-repeat;
 	text-indent: -9999px;
 }
 
@@ -194,8 +199,13 @@ nav p span {
 	width: 300px;
 	margin-right: 215px;
 	float: right;
-	background-color: #4B0082;
-	border-radius:  5px;
+/*	background-color: #4B0082;*/
+/*	border-radius:  5px;*/
+}
+
+.blog_Section_column ul {
+    background-color: #4B0082;
+    border-radius: 5px;
 }
 
  .blog_Section_column #title {
@@ -319,25 +329,25 @@ footer a {
 }
 
 #fbLogo {
-	background: url("/img/fbLogo_black.png")no-repeat ;
+	background: url("../img/fbLogo_black.png")no-repeat ;
 }
 
 #fbLogo:hover {
-	background: url("/img/fbLogo_color.png")no-repeat ;
+	background: url("../img/fbLogo_color.png")no-repeat ;
 }
 
 #twLogo {
-	background: url("/img/twLogo_black.png") no-repeat;
+	background: url("../img/twLogo_black.png") no-repeat;
 }
 
 #twLogo:hover {
-	background: url("/img/twLogo_color.png") no-repeat;
+	background: url("../img/twLogo_color.png") no-repeat;
 }
 
 #gpLogo {
-	background: url("/img/gpLogo_black.png") no-repeat;	
+	background: url("../img/gpLogo_black.png") no-repeat;	
 }
 
 #gpLogo:hover {
-	background: url("/img/gpLogo_color.png") no-repeat;	
+	background: url("../img/gpLogo_color.png") no-repeat;	
 }

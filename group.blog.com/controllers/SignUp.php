@@ -31,6 +31,7 @@
 
                 $create = new CreateSQL();
                 $create->create($user, $email, $pass);
+                header('Location: index.php');
             } else {
                 echo $message;
             }   

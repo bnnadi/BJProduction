@@ -7,8 +7,8 @@
 		
 		function getView($file = '', $data = '') {
 				
-			$fullPath = "/Users/bisikennadi/Site/group.blog.com/views/$file.php";
-            //$fullPath = "/var/www/BJProduction/group.blog.com/views/$file.php";
+//			$fullPath = "/Users/bisikennadi/Site/group.blog.com/views/$file.php";
+            $fullPath = "/var/www/BJProduction/group.blog.com/views/$file.php";
 			
 			if (preg_match("/\w/", $file) && file_exists($fullPath)) {
 				

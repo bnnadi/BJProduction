@@ -20,6 +20,7 @@
             
             if ($message == "valid") {
                 include_once('database/modifyblog.php');
+                header('Location: index.php?page=userpage');
             } else {
                 echo $message;
             }   

@@ -18,8 +18,22 @@
             <option value="Miscellanous">Miscellanous</option> 
         </select>
       	<label>Content</label> <textarea name="content"><?php echo $_GET['content']; ?></textarea><br />
+        <?php
+            if ($_GET['page'] == 'createblog') {
+                $text = "add blog";
+            }  
+        ?>
+          
       	<div>
-      		<a href="/">cancel</a><input id="submit" type="submit" value="sign up"/><br />
-      	</div>
+      		<a href="?page=userpage">cancel</a>
+            <?php
+                if ($_GET['page'] == 'createblog') {
+                    echo '<input id="submit" type="submit" value="add blog"/>';
+                } 
+                else if ($_GET['page'] == 'modifyblog') {
+                    echo '<input id="submit" type="submit" value="modify blog"/>';
+                }
+             ?><br />
+      	</div> 
       </form>
 </div>

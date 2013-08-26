@@ -14,7 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
 		<link href='http://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="/css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico" />
@@ -34,6 +34,7 @@
 			<p>Currently logged in as <span><?php 
                                               if ($_SESSION['loggedin'] == 'true') {
                                                   echo $_SESSION['username'];
+                                                  echo "<a href='?page=logout' class='logout'>                                                             logout</a>";
                                               } else {
                                                   echo 'guest';
                                               } 

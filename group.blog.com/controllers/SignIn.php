@@ -10,6 +10,7 @@
         }
         else if (!empty($_POST)) {
             include_once("database/login.php");
+            header('Location: index.php');
         } else {
             $username = "guest";
         }

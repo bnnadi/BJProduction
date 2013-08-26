@@ -31,6 +31,7 @@
             
                 $create = new MakeBlog();
                 $create->create($userID, $title, $topic, $content);
+                header('Location: index.php?page=userpage');
             } else {
                 echo $message;
             }   

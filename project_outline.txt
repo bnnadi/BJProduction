@@ -1,6 +1,6 @@
 Statement of Purpose:
 
-The purpose of this project is to create a blog site that can interact with the flickr API. The blog site will contain different topics that can be browsed by any user, but only the users that are logged in can add and modify their own blogs. 
+The purpose of this project is to create a blog site that can interact with the DuckDuckGO API. The DuckDuckGO API will allow any user to select any of the related links to search for more information. The blog site will contain different topics that can be browsed by any user, but only the users that are logged in can add and modify their own blogs. 
 
 Responsabilities:
 
