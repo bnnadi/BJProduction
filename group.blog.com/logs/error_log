@@ -56,3 +56,13 @@
 [Fri Aug 23 17:09:55 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/www.facbook.com, referer: http://group.blog.com/
 [Fri Aug 23 17:13:35 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/img/3.png, referer: http://group.blog.com/
 [Fri Aug 23 17:13:59 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/img/3.png, referer: http://group.blog.com/
+[Sat Aug 24 15:15:49 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/home, referer: http://group.blog.com/home/logIn
+[Sat Aug 24 15:15:54 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/home, referer: http://group.blog.com/home/logIn
+[Sat Aug 24 15:16:00 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/home, referer: http://group.blog.com/home/logIn?page='home'
+[Sat Aug 24 15:16:18 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/home, referer: http://group.blog.com/home/logIn
+[Sat Aug 24 15:16:21 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/home, referer: http://group.blog.com/home/signUp
+[Sat Aug 24 15:54:17 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/home, referer: http://group.blog.com/home/logIn
+[Sat Aug 24 15:54:43 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/home, referer: http://group.blog.com/home/logIn
+[Sun Aug 25 19:23:20 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/', referer: http://group.blog.com/?page=home
+[Sun Aug 25 19:23:33 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/', referer: http://group.blog.com/?page=home
+[Sun Aug 25 19:23:40 2013] [error] [client 127.0.0.1] File does not exist: /Users/bisikennadi/Site/group.blog.com/home, referer: http://group.blog.com/home/logIn

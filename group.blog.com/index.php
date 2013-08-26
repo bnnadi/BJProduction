@@ -4,12 +4,12 @@ session_start();
 
 $page = $_GET['page'];
 
-if ($page == "signup") {
+if ($page == "signUp") {
     include "controllers/SignUp.php";
     $instance = new SignUp();
     $instance->get($_GET);
 }
-else if ($page == "signin") {
+else if ($page == "logIn") {
     include "controllers/SignIn.php";
     $instance = new SignIn();
     $instance->get($_GET);
@@ -59,8 +59,7 @@ if ($con == "home") {
 }else{
 	echo "the controller was not 'home'";
 }*/
-
-// $test  = "{'name': 'Bisike', 'school': 'Full Sail', 'city': 'Orlando'}";
+?>// $test  = "{'name': 'Bisike', 'school': 'Full Sail', 'city': 'Orlando'}";
 // 
 // $t =array(
 	// 'name'=> 'Biske',
