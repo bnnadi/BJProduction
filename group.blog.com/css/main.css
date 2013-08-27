@@ -57,8 +57,8 @@ html {
 nav p {
 	clear: both;
 	float: right;
-	margin: -30px 30px 0 0;
-	width: 230px;
+	margin: -30px 55px 0 0;
+	width: 260px;
 }
 
 nav p span {
@@ -75,6 +75,16 @@ nav p span {
 	/*background: #ffffff url("/img/03_hover.png")no-repeat right;*/
 	color: #4B0082;
     font-weight: bold;
+}
+
+.logout {
+	float: right;
+	color:  #4B0082;
+	font-weight: 200;
+}
+
+.logout:hover {
+	font-weight: normal;
 }
 
 .topLine {
@@ -97,16 +107,17 @@ nav p span {
 }
 
 #add_button {
-	width: 100px;
-	float: right;
+	width: 250px;
 }
 
 #add_button a:first-child {
+	float:left;
 	display: block;
 	height: 48px;
+	width: 50px;
 	background: url("../img/add.png")no-repeat;
 	text-indent: -9999px;
-	margin-bottom: 15px;
+	margin-left: 60px;
 }
 
 #add_button a:first-child:hover {
@@ -115,11 +126,13 @@ nav p span {
 }
 
 #add_button a:last-child {
+	float:left;
 	display:block;
 	height: 48px;
 /*	background: url("/img/edit.png")no-repeat;*/
     background: url("../img/edit.png")no-repeat;
 	text-indent: -9999px;
+	margin-left: 70px;
 }
 
 #add_button a:last-child:hover {

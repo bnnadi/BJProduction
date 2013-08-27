@@ -1,7 +1,7 @@
 <?php
 
-$dbhost = 'localhost';
-//$dbhost = ':/Applications/MAMP/tmp/mysql/mysql.sock';
+//$dbhost = 'localhost';
+$dbhost = ':/Applications/MAMP/tmp/mysql/mysql.sock';
 $dbuser = 'root';
 $dbpass = 'root';
 $db = 'mysql_tut';
